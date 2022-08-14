@@ -1,13 +1,17 @@
-package com.usrmarcos.desafioSenior;
+/**
+ * @author m-ant
+ */
+
+package com.usrmarcos.springCRUD;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DesafioSeniorApplication {
+public class SpringCRUDApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DesafioSeniorApplication.class, args);
+		SpringApplication.run(SpringCRUDApplication.class, args);
 	}
 
 }

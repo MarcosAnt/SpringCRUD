@@ -1,25 +1,34 @@
-package com.usrmarcos.desafioSenior.entity;
+/**
+ * @author m-ant
+ */
+
+package com.usrmarcos.springCRUD.repository.entity;
 
 import java.util.UUID;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 
 @Entity
 @Table(name = "pedido_item")
 public class PedidoItem {
 
-	@Transient
-	private UUID id = UUID.randomUUID();
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name = "id")
+	private UUID id;
 	
-	@OneToMany
+	@ManyToOne
 	@JoinColumn(name = "pedido_id")
 	private Pedido pedido;
 	
-	@OneToMany
+	@ManyToOne
 	@JoinColumn(name = "item_id")
 	private Item item;
 

@@ -1,12 +1,10 @@
-package com.usrmarcos.desafioSenior.util;
+/**
+ * @author m-ant
+ */
+
+package com.usrmarcos.springCRUD.util;
 
 import org.springframework.http.HttpStatus;
-
-/**
- * 
- * @author MarcosAnt
- *
- */
 
 public class ApiError {
 

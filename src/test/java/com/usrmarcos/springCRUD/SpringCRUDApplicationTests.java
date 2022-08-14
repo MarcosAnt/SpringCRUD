@@ -1,10 +1,14 @@
-package com.usrmarcos.desafioSenior;
+/**
+ * @author m-ant
+ */
+
+package com.usrmarcos.springCRUD;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DesafioSeniorApplicationTests {
+class SpringCRUDApplicationTests {
 
 	@Test
 	void contextLoads() {

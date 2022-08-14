@@ -1,4 +1,8 @@
-package com.usrmarcos.desafioSenior.service;
+/**
+ * @author m-ant
+ */
+
+package com.usrmarcos.springCRUD.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,8 +11,8 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.usrmarcos.desafioSenior.entity.Item;
-import com.usrmarcos.desafioSenior.repository.ItemRepository;
+import com.usrmarcos.springCRUD.repository.ItemRepository;
+import com.usrmarcos.springCRUD.repository.entity.Item;
 
 @Service
 public class ItemService {

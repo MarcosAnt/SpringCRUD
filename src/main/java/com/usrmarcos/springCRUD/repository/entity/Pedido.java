@@ -1,6 +1,10 @@
-package com.usrmarcos.desafioSenior.entity;
+/**
+ * @author m-ant
+ */
 
-import java.sql.Date;
+package com.usrmarcos.springCRUD.repository.entity;
+
+import java.util.Date;
 import java.util.UUID;
 
 import javax.persistence.Column;

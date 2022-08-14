@@ -1,13 +1,11 @@
-package com.usrmarcos.desafioSenior.controller;
+/**
+ * @author m-ant
+ */
+
+package com.usrmarcos.springCRUD.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-/**
- * 
- * @author m-ant
- *
- */
 
 public class UtilController {
 

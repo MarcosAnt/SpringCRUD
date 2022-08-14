@@ -1,4 +1,8 @@
-package com.usrmarcos.desafioSenior.entity;
+/**
+ * @author m-ant
+ */
+
+package com.usrmarcos.springCRUD.repository.entity;
 
 import java.util.UUID;
 
@@ -11,7 +15,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.usrmarcos.desafioSenior.enuns.TipoItem;
+import com.usrmarcos.springCRUD.enuns.TipoItem;
 
 @Entity
 @Table(name = "item")
