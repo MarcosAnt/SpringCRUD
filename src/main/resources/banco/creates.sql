@@ -11,7 +11,8 @@ CREATE DATABASE spring_crud
 create table produto (
 	id UUID primary key,
 	data timestamp not null,
-	percentual_desconto decimal
+	percentual_desconto double,
+	valor double
 );
 
 create table item (

@@ -34,7 +34,7 @@ public class Item {
 	private TipoItem tipoItem;
 	
 	@Column(name = "valor")
-	private Long valor;
+	private Double valor;
 
 	public UUID getId() {
 		return id;
@@ -60,11 +60,11 @@ public class Item {
 		this.tipoItem = tipoItem;
 	}
 
-	public Long getValor() {
+	public Double getValor() {
 		return valor;
 	}
 
-	public void setValor(Long valor) {
+	public void setValor(Double valor) {
 		this.valor = valor;
 	}
 

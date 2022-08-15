@@ -30,7 +30,10 @@ public class Pedido {
 	private Date data;
 	
 	@Column(name = "pencentual_desconto")
-	private Long percentualDesconto;
+	private Double percentualDesconto;
+	
+	@Column(name = "valor")
+	private Double valor;
 
 	public UUID getId() {
 		return id;
@@ -48,12 +51,20 @@ public class Pedido {
 		this.data = data;
 	}
 
-	public Long getPercentualDesconto() {
+	public Double getPercentualDesconto() {
 		return percentualDesconto;
 	}
 
-	public void setPercentualDesconto(Long percentualDesconto) {
+	public void setPercentualDesconto(Double percentualDesconto) {
 		this.percentualDesconto = percentualDesconto;
+	}
+
+	public Double getValor() {
+		return valor;
+	}
+
+	public void setValor(Double valor) {
+		this.valor = valor;
 	}
 	
 }
