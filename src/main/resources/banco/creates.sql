@@ -25,6 +25,7 @@ create table item (
 	id UUID default uuid_generate_v4(),
 	ativo boolean default true,
 	tipo_item varchar(10),
+	descricao varchar(150),
 	valor decimal,
 	primary key (id)
 );
