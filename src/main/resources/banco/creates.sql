@@ -2,17 +2,19 @@
  * @author m-ant
  */
 
+-- DATABASE
 CREATE DATABASE spring_crud
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'
     CONNECTION LIMIT = -1; 
 
+-- TABELAS
 create table produto (
 	id UUID primary key,
 	data timestamp not null,
-	percentual_desconto double,
-	valor double
+	percentual_desconto decimal,
+	valor decimal
 );
 
 create table item (
