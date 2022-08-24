@@ -13,7 +13,7 @@ CREATE DATABASE spring_crud
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 -- TABELAS
-create table produto (
+create table pedido (
 	id UUID default uuid_generate_v4(),
 	data timestamp not null,
 	percentual_desconto decimal,
@@ -35,6 +35,6 @@ create table pedido_item (
 	pedido_id UUID,
 	item_id UUID,
 	primary key (id),
-	foreign key (pedido_id) references produto (id),
+	foreign key (pedido_id) references pedido (id),
 	foreign key (item_id) references item (id)
 );
